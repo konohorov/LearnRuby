@@ -2,7 +2,7 @@
 # integer methods: odd?, even?, next, to_s, to_f, times
 # string methods: length, upcase, downcase, capitalize, swapcase, reverse, #{string}, empty?, nil?
 # float methods: to_i (cuts all after comma), floor + ceil (return integer), round(), abs (how far from 0)
-# boolean methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true)
+# boolean methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true), .is_a?(Integer)
 # math: + - * / % **
 
 # print "What's your first name? "
