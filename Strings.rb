@@ -40,3 +40,11 @@ full_name.reverse # returns string in oposite order abc -> cba
 
 full_name.include?("r") # key sensetive
 # nil? example - when we create new srting from existing, but mistakenly specify wrong string range
+# .split - returns array of strings, splitted by delimiter, default - space, "" - every letter is an element
+# .split("") = .chars
+# .join() - returns a string from array of strings
+# .count - return number of letters in string
+# .index(), .rindex() - return index of specified letter
+# .insert(3, "string") - inserts substring at the specified position
+# .squeeze() - remove duplicate characters, arguments - what to remove, e.g .squeeze(" ") - removed extra spaces, can use with !
+# .clear - return empty string, .delete() - removes specified chars

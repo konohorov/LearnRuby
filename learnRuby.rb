@@ -1,13 +1,17 @@
 # general methods: class, puts (with linebreak), print (without linebreak), p (with doublequotes)
 # integer methods: odd?, even?, next, to_s, to_f, times
-# string methods: length, upcase, downcase, capitalize, swapcase, reverse, #{string}, empty?, nil?
+# string methods: length, upcase, downcase, capitalize, swapcase, reverse, #{string}, empty?, nil?, each_char
 # float methods: to_i (cuts all after comma), floor + ceil (return integer), round(), abs (how far from 0)
 # boolean methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true), .is_a?(Integer)
 # math: + - * / % **
+#
+# def method_name(*args) - splat argument - allows to operate any number of arguments from 0 ti infinite
+# end
+#
 
-# print "What's your first name? "
-# first_name = gets.chomp.downcase
-# print first_name
+print "What's your first name? "
+first_name = gets.chomp.downcase
+puts first_name
 
 age = 5.next
 5.to_s
@@ -15,7 +19,6 @@ age = 5.next
 NAME = "Sasha"
 print NAME.length
 puts
-
 
 name = "Vasya"
 p "Hello #{name}, how are you?"
@@ -55,7 +58,7 @@ c += 5
 
 2.times { |i| puts "String #{i}"}
 2.times do |i| #iteration
-  puts "Strind #{i + 1}"
+  puts "String #{i + 1}"
   puts "String A"
   puts "String B"
 end
