@@ -14,8 +14,8 @@
 # .any? {}, .all? {} - return bool value depends on condition in block
 # .uniq - removes duplicate elements, can be used with !
 # .compact - removes nil from array, can be used with !
-# inject(), .reduce() - operation with all elements, like sum or multiply
-# .sample() - returns random element, or number of elements (spec in args)
+# .inject(), .reduce() - operation with all elements, like sum or multiply
+# .sample() - returns random element, or number of elements (specified in args)
 # - (minus sign) removes provided elements: [1, 2, 3] - [2] removes 2
 # & (ampersand sign) returns array with unique common elements: [1, 2, 3] & [2, 3, 4] returns [2, 3]
 

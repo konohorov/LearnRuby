@@ -4,12 +4,12 @@
     <shared />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../LearnRuby">
-      <sourceFolder url="file://$MODULE_DIR$/../LearnRuby/features" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../LearnRuby/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../LearnRuby/test" isTestSource="true" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/features" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="ruby-2.7.1-p83" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="ruby-2.6.6-p146" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

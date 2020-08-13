@@ -1,4 +1,4 @@
-# case, unless (statement is false - reverse for if), while (statement is true), until (statement is false)
+# case, if, unless (statement is false - reverse for if), while (statement is true), until (statement is false, reverse for while)
 
 def rate(score) # case -> when -> then -> else
   case score

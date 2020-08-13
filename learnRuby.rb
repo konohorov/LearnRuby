@@ -2,11 +2,19 @@
 # integer methods: odd?, even?, next, to_s, to_f, times
 # string methods: length, upcase, downcase, capitalize, swapcase, reverse, #{string}, empty?, nil?, each_char
 # float methods: to_i (cuts all after comma), floor + ceil (return integer), round(), abs (how far from 0)
-# boolean methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true), .is_a?(Integer)
+# boolean (predicate) methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true), .is_a?(Integer)
 # math: + - * / % **
 #
 # def method_name(*args) - splat argument - allows to operate any number of arguments from 0 ti infinite
 # end
+#
+# .methods - available methods for object
+#
+# def method
+#   yield(argument) if block_given? - requires code block for method invoker
+# end
+# method { |parameter| block }
+#
 #
 
 print "What's your first name? "
