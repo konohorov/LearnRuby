@@ -61,4 +61,4 @@ animals.select { |animal| animal.include?("c") } # returns array with elements, 
 animals.find { |animal| animal.include?("c") } # returns first element, that meet the condition (.find == .detect)
 animals.reject { |animal| animal.include?("c") } # returns array with elements, that do not fit the condition
 animals.partition { |animal| animal.include?("c") } # returns multidimensional array with arrays, that fit the condition
-[1, 2, 3] | [3, 4, 5] # union method - returns [1, 2, 3, 4, 5], removing duplicates
+[1, 2, 3] | [3, 4, 5] # union method - returns [1, 2, 3, 4, 5], removing duplicates = &
