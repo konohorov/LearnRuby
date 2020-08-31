@@ -48,3 +48,4 @@ full_name.include?("r") # key sensetive
 # .insert(3, "string") - inserts substring at the specified position
 # .squeeze() - remove duplicate characters, arguments - what to remove, e.g .squeeze(" ") - removed extra spaces, can use with !
 # .clear - return empty string, .delete() - removes specified chars
+#

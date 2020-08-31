@@ -26,7 +26,7 @@
 points = [2, 6, 8, 6, 4, 8, 7, 2, 0, 6]
 points.fetch(10, "out of bounds") # returns element by index, if out of bounds can return custom message/value
 
-points[3] # returns element
+points[3] # returns element with index 3
 points[3, 5] # returns array of elements, 3 - index, 5 - number of elements
 points[3..5] # range of indexes
 points.slice(3) # the same as above methods

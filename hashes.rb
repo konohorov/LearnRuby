@@ -45,4 +45,4 @@ prices.to_a # return multidimensional array, [[key, value], ... , [key, value]],
 hash1 = {key1: value1, key2: value2, key3: value3}
 hash2 = {key1: value4, key2: value5, key3: value3}
 
-hash1.merge(hash2) # return new hash, can be used with !, if keys are identical - value from argument overides
+hash1.merge(hash2) # return new hash, can be used with !, if keys are identical - value from argument overwrites
