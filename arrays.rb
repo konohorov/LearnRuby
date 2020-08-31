@@ -42,7 +42,8 @@ points.first(3) # returns first three elements
 points.push(4) # add element to the end. opposite method .unshift
 points << 3 << 2 << 1 # shovel operator - add elements to the end
 points.insert(6, 7) # first arg - index, second - object
-points.pop # removes last element, it can be stored in variable. opposite method .shift
+points.pop # removes and removes last element, it can be stored in variable. opposite method .shift
+points.shift # removes and returns first element, it can be stored in variable.
 points.pop(2) # removes last 2 elements, it can be stored in array
 points.each { |i| puts "#{i} + 1" } # required block {} or do-end with iterator ||, where i = object from array
 points.each_with_index { |point, i| puts "point * #{i}" } # each loop with element and its index

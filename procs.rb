@@ -14,5 +14,15 @@ to_euros.call(25) # runs the proc
 to_hryvnya.call(25) # runs the lambda
 
 currencies.map(&:to_s) # converts number array to string array
-                       # add & sign (proc), convert method mane to sighn with :
+                       # add & sign (proc), convert method mane to sign with :
 
+def my_method(&my_block)
+  puts "First"
+  my_block.call("2nd")
+  yield("one more tine 2nd")
+  puts "Third"
+end
+
+my_method do |param|
+  puts "Second #{param}"
+end
