@@ -15,5 +15,4 @@ p lambda{}.class
 
 
 # Numeric = Integer and Floating
-# .ancestor
-#
+# .ancestor - displays chain of modules / super classes above the current class

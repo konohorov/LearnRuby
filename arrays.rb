@@ -11,7 +11,7 @@
 #    end                    end
 #   end                   end
 # .index, .include?
-# .any? {}, .all? {} - return bool value depends on condition in block
+# .any? {}, .all? {}, .none? {} - return bool value depends on condition in block
 # .uniq - removes duplicate elements, can be used with !
 # .compact - removes nil from array, can be used with !
 # .inject(), .reduce() - operation with all elements, like sum or multiply
@@ -49,7 +49,7 @@ points.each { |i| puts "#{i} + 1" } # required block {} or do-end with iterator 
 points.each_with_index { |point, i| puts "point * #{i}" } # each loop with element and its index
 points1 = points.map { |point| puts "point * 2" } # .map, .collect - create new array after operations in first array
 points1.sort # sort array accending, return an array, so can be used with ! , .sort.reverse - descending order
-points.concat([1, 2, 3]) # concatenate arrays, mutates aray (returns new array)
+points.concat([1, 2, 3]) # concatenate arrays, mutates array (returns new array)
 points.min # alternative array.sort[-1]
 points.max # alternative array.sort[0]
 def custom_min(arr)
@@ -60,6 +60,7 @@ end
 animals = ["cheetah", 'lion', "cat", "dog",]
 animals.select { |animal| animal.include?("c") } # returns array with elements, that fit the condition
 animals.find { |animal| animal.include?("c") } # returns first element, that meet the condition (.find == .detect)
-animals.reject { |animal| animal.include?("c") } # returns array with elements, that do not fit the condition
+animals.find_all { |animal| animal.include?("c") } # returns all elements, that meet the condition
+animals.reject { |animal| animal.include?("c") } # returns array with elements, that do not fit the condition (opposite to find_all)
 animals.partition { |animal| animal.include?("c") } # returns multidimensional array with arrays, that fit the condition
 [1, 2, 3] | [3, 4, 5] # union method - returns [1, 2, 3, 4, 5], removing duplicates = &

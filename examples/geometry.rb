@@ -1,9 +1,9 @@
-require_relative 'circle' # if in the same folder
+require_relative 'circle_module' # if in the same folder
 
-puts Circle.area(3)
+puts CircleModule.area(3)
 
 class Geometry
-  include Circle # or "prepend", if module method important
+  include CircleModule # or "prepend", if module method important
 end
 
 geo = Geometry.new

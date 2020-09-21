@@ -14,6 +14,7 @@
 #
 
 "string".to_sym
+"string".intern
 
 person = {name: "Vasya",
 age: 25}

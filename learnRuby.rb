@@ -44,7 +44,7 @@ str = str.to_i
 p str.next
 
 p 10.class
-
+10.eve
 
 s = "5"
 d = "5.0"
@@ -80,3 +80,5 @@ end
 making_a_call(982211479)  # invoke method with default arguments
 making_a_call(989055393, 389) # invoke method with custom arguments
 
+
+p 3.1415.ceil

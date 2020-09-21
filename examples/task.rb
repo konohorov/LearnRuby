@@ -87,3 +87,11 @@ p word_count(string)
 convert_to = gets.chomp.to_i
 p convert_to.class
 p convert_to
+
+puts "enter text"
+text = gets.chomp
+words = text.split(" ")
+
+words.each do |word|
+  print word
+end
