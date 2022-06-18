@@ -1,12 +1,12 @@
-class PLayers
+class Planets
   attr_accessor :name, :team
 end
 
-default_player = PLayers.new
+default_player = Planets.new
 default_player.team = 'Natus Vincere'
 
 players = Hash.new do |hash, key|
-  player = PLayers.new
+  player = Planets.new
   player.team = 'Natus Vincere'
   hash[key] = player
 end

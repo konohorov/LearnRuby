@@ -19,17 +19,15 @@
 # - (minus sign) removes provided elements: [1, 2, 3] - [2] removes 2
 # & (ampersand sign) returns array with unique common elements: [1, 2, 3] & [2, 3, 4] returns [2, 3]
 
-
-%w["a", "b", "c"] # array of strings
-
+p %w[a b c] # array of words
 
 points = [2, 6, 8, 6, 4, 8, 7, 2, 0, 6]
-points.fetch(10, "out of bounds") # returns element by index, if out of bounds can return custom message/value
+points.fetch(10, 'out of bounds') # returns element by index, if out of bounds can return custom message/value
 
 points[3] # returns element with index 3
 points[3, 5] # returns array of elements, 3 - index, 5 - number of elements
 points[3..5] # range of indexes
-points.slice(3) # the same as above methods
+points.slice(3) # returns element with index 3
 points.values_at(1, 5, -2, 5) # returns array of elements by indexes
 points[5] = 1 # overwrites element
 points[points.length] = 4 # add element to the end
@@ -42,7 +40,7 @@ points.first(3) # returns first three elements
 points.push(4) # add element to the end. opposite method .unshift
 points << 3 << 2 << 1 # shovel operator - add elements to the end
 points.insert(6, 7) # first arg - index, second - object
-points.pop # removes and removes last element, it can be stored in variable. opposite method .shift
+points.pop # removes and returns last element, it can be stored in variable. opposite method .shift
 points.shift # removes and returns first element, it can be stored in variable.
 points.pop(2) # removes last 2 elements, it can be stored in array
 points.each { |i| puts "#{i} + 1" } # required block {} or do-end with iterator ||, where i = object from array
@@ -50,8 +48,8 @@ points.each_with_index { |point, i| puts "point * #{i}" } # each loop with eleme
 points1 = points.map { |point| puts "point * 2" } # .map, .collect - create new array after operations in first array
 points1.sort # sort array accending, return an array, so can be used with ! , .sort.reverse - descending order
 points.concat([1, 2, 3]) # concatenate arrays, mutates array (returns new array)
-points.min # alternative array.sort[-1]
-points.max # alternative array.sort[0]
+# points.min # alternative array.sort[-1]
+# points.max # alternative array.sort[0]
 def custom_min(arr)
   min = arr[0]
   arr.each { |value| min < value if value < min}

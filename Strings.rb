@@ -1,3 +1,5 @@
+require "base64"
+
 name = String.new("Sasha")
 puts name
 
@@ -48,4 +50,10 @@ full_name.include?("r") # key sensetive
 # .insert(3, "string") - inserts substring at the specified position
 # .squeeze() - remove duplicate characters, arguments - what to remove, e.g .squeeze(" ") - removed extra spaces, can use with !
 # .clear - return empty string, .delete() - removes specified chars
-#
+
+str  = "WORLD olleh".chars
+code = str[-5..-1].reverse.join("|")
+puts code.upcase
+
+code = 'welcome'
+puts code.reverse.upcase.chars.reverse.join("-") + ":2021"

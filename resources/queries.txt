@@ -1,0 +1,3 @@
+team_name: SELECT tm.name FROM players pl JOIN teams tm ON pl.team_id = tm.id WHERE pl.slug = 'coldzera'
+player_slug: SELECT slug FROM players WHERE id = 17499
+player_first_name: SELECT first_name FROM players WHERE id = 17499

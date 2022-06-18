@@ -1,6 +1,6 @@
 require 'time'
 
-Time.new(1985, 9, 14, 7, 30, 30) # uses when you need to store some specific (provided in the arguments) time in variable
+Time.new(1985, 9, 14, 7, 30, 30) # uses when you need to store some specific time (provided in the arguments)
 Time.now # uses to specify current time
 
 a = Time.now

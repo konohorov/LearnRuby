@@ -1,11 +1,11 @@
 # general methods: class, puts (with linebreak), print (without linebreak), p (with doublequotes)
 # integer methods: odd?, even?, next, to_s, to_f, times
 # string methods: length, upcase, downcase, capitalize, swapcase, reverse, #{string}, empty?, nil?, each_char
-# float methods: to_i (cuts all after comma), floor + ceil (return integer), round(), abs (how far from 0)
+# float methods: to_i (cuts all after comma), round + floor + ceil (return integer), round(), abs (how far from 0)
 # boolean (predicate) methods: ==, !=, >, <, >=, <=, &&, ||, between?(a, b), !! - negation (! - false, !! - true), .is_a?(Integer)
 # math: + - * / % **
 #
-# def method_name(*args) - splat argument - allows to operate any number of arguments from 0 ti infinite
+# def method_name(*args) - splat argument - allows to operate any number of arguments from 0 to infinite
 # end
 #
 # .methods - available methods for object
